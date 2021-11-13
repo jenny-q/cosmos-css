@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+h1,h2,h3,h4,h5, p, a, button, label, select, input, div, span {
+    font-family: 'Roboto', sans-serif;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.column {
+    flex-basis: auto;
+
+    .is-25 & {
+        flex-basis: 25%;
+    }
+    .is-50 & {
+        flex-basis: 50%;
+    }
+
+    &-content {
+        // margin: .25rem;
+        // padding: .25rem;
+    }
+
+    &.is-100 {
+        flex-basis: 100%;
+    }
+}
+
+.heading {
+    width: 100%;
+    margin: 0.25rem;
+}
+
+.m-xs {
+    margin: .25rem;
+}
+
+.p-xs {
+    padding: .25rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.btn {
+    border-radius: 0;
+    border: 0;
+    background: #fff;
+    padding: .5rem;
+    border: 1px solid #DADADA;
+    cursor: pointer;
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+        border: 1px solid #000;
+    }
+
+    &--rounded {
+        border-radius: .25rem;
+    }
+
+    &--link {
+        border: none;
+        padding: 0;
+
+        &:hover {
+            border:none;
+            text-decoration: underline;
+        }
+    }
+
+    &.red {
+        border-color: #BA0000;
+        color: #BA0000;
+        transition: .1s;
+
+        &:hover {
+            background: #BA0000;
+            color: #fff;
+            transition: .1s;
+        }
+    }
+
+    &.yellow {
+        border-color: #FFE400;
+        transition: .1s;
+        &:hover {
+            background: #FFE400;
+            transition: .1s;
+        }
+    }
+
+    &.green {
+        border-color: #74F211;
+        transition: .1s;
+        &:hover {
+            background: #74F211;
+            transition: .1s;
+        }
+    }
+}
+
+.form-control {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    &--stacked {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    &--floating {
+        position: relative;
+    }
+}
+
+.label {
+    flex-basis: auto;
+
+    .form-control--stacked & {
+        margin-bottom: 0.25rem;
+    }
+
+    .form-control--floating & {
+        position: absolute;
+        font-size: .8rem;
+        top: 3px;
+        left: 5px;
+    }
+}
+
+.input {
+    border: 1px solid #ccc;
+    height: 25px;
+    margin-left: 0.5rem;
+
+    .form-control--stacked &,
+    .form-control--floating & {
+        margin-left: 0;
+    }
+
+    .form-control--floating & {
+        height: auto;
+        padding: 20px 0 4px 6px;
+    }
+}
