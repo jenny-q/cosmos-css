@@ -1,0 +1,45 @@
+.form-control {
+    display: flex;
+    align-items: center;
+    margin-bottom: $lg;
+
+    &--stacked {
+        flex-direction: column;
+        align-items: baseline;
+    }
+
+    &--floating {
+        position: relative;
+    }
+}
+
+.label {
+    flex-basis: auto;
+
+    .form-control--stacked & {
+        margin-bottom: $xs;
+    }
+
+    .form-control--floating & {
+        position: absolute;
+        font-size: .8rem;
+        top: 3px;
+        left: 5px;
+    }
+}
+
+.input {
+    border: 1px solid $outline;
+    height: 25px;
+    margin-left: $sm;
+
+    .form-control--stacked &,
+    .form-control--floating & {
+        margin-left: 0;
+    }
+
+    .form-control--floating & {
+        height: auto;
+        padding: 20px 0 4px 6px;
+    }
+}

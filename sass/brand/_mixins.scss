@@ -1,0 +1,48 @@
+//media queries
+@mixin min-xs {
+    @media (min-width: $screen-xs) {
+        @content;
+    }
+}
+@mixin min-sm {
+    @media (min-width: $screen-sm) {
+        @content;
+    }
+}
+@mixin min-md {
+    @media (min-width: $screen-md) {
+        @content;
+    }
+}
+@mixin min-lg {
+    @media (min-width: $screen-lg) {
+        @content;
+    }
+}
+@mixin min-xl {
+    @media (min-width: $screen-xl) {
+        @content;
+    }
+}
+@mixin min-lt {
+    @media (min-width: $screen-xl) {
+        @content;
+    }
+}
+@mixin min-xxl {
+    @media (min-width: $screen-xxl) {
+        @content;
+    }
+}
+@mixin min-3xl {
+    @media (min-width: $screen-3xl) {
+        @content;
+    }
+}
+
+//laptop screens
+@mixin min-laptop {
+    @media (max-width: $screen-lt) and (max-height: $screen-md) {
+        @content;
+    }
+}

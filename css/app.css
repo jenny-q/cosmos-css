@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+h1, h2, h3, h4, h5, p, a, button, label, select, input, div, span {
+  font-family: 'Roboto', sans-serif; }
+
+.row {
+  display: flex;
+  flex-wrap: wrap; }
+
+.column {
+  flex-basis: auto; }
+  .is-25 .column {
+    flex-basis: 25%; }
+  .is-50 .column {
+    flex-basis: 50%; }
+  .column.is-100 {
+    flex-basis: 100%; }
+
+.heading {
+  width: 100%;
+  margin: 0.25rem; }
+
+.m-xs {
+  margin: 0.25rem; }
+
+.p-xs {
+  padding: 0.25rem; }
+
+.container {
+  max-width: 1200px;
+  width: 100%; }
+  @media (min-width: 320px) {
+    .container {
+      margin: 0 1rem; } }
+  @media (min-width: 1200px) {
+    .container {
+      margin: 0 auto; } }
+
+.btn {
+  border-radius: 0;
+  border: 0;
+  background: #fff;
+  padding: .5rem;
+  border: 1px solid #DADADA;
+  cursor: pointer; }
+  .btn:hover, .btn:focus, .btn:focus-visible {
+    border: 1px solid #000; }
+  .btn--rounded {
+    border-radius: .25rem; }
+  .btn--link {
+    border: none;
+    padding: 0; }
+    .btn--link:hover {
+      border: none;
+      text-decoration: underline; }
+  .btn.red {
+    border-color: #BA0000;
+    color: #BA0000;
+    transition: .1s; }
+    .btn.red:hover {
+      background: #BA0000;
+      color: #ffffff;
+      transition: .1s; }
+  .btn.yellow {
+    border-color: #FFE400;
+    transition: .1s; }
+    .btn.yellow:hover {
+      background: #FFE400;
+      transition: .1s; }
+  .btn.green {
+    border-color: #74F211;
+    transition: .1s; }
+    .btn.green:hover {
+      background: #74F211;
+      transition: .1s; }
+
+.bg-light-gray {
+  background: #E5E5E5; }
+
+.form-control {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem; }
+  .form-control--stacked {
+    flex-direction: column;
+    align-items: baseline; }
+  .form-control--floating {
+    position: relative; }
+
+.label {
+  flex-basis: auto; }
+  .form-control--stacked .label {
+    margin-bottom: 0.25rem; }
+  .form-control--floating .label {
+    position: absolute;
+    font-size: .8rem;
+    top: 3px;
+    left: 5px; }
+
+.input {
+  border: 1px solid #8F8F8F;
+  height: 25px;
+  margin-left: 0.5rem; }
+  .form-control--stacked .input,
+  .form-control--floating .input {
+    margin-left: 0; }
+  .form-control--floating .input {
+    height: auto;
+    padding: 20px 0 4px 6px; }

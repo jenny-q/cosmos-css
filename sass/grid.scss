@@ -17,12 +17,6 @@ h1,h2,h3,h4,h5, p, a, button, label, select, input, div, span {
     .is-50 & {
         flex-basis: 50%;
     }
-
-    &-content {
-        // margin: .25rem;
-        // padding: .25rem;
-    }
-
     &.is-100 {
         flex-basis: 100%;
     }
@@ -30,21 +24,28 @@ h1,h2,h3,h4,h5, p, a, button, label, select, input, div, span {
 
 .heading {
     width: 100%;
-    margin: 0.25rem;
+    margin: $xs;
 }
 
 .m-xs {
-    margin: .25rem;
+    margin: $xs;
 }
 
 .p-xs {
-    padding: .25rem;
+    padding: $xs;
 }
 
 .container {
     max-width: 1200px;
-    margin: 0 auto;
     width: 100%;
+
+    @include min-xs {
+        margin: 0 1rem;
+    }
+
+    @include min-xl {
+        margin: 0 auto;
+    }
 }
 
 .btn {
@@ -82,7 +83,7 @@ h1,h2,h3,h4,h5, p, a, button, label, select, input, div, span {
 
         &:hover {
             background: #BA0000;
-            color: #fff;
+            color: $white;
             transition: .1s;
         }
     }
@@ -106,48 +107,3 @@ h1,h2,h3,h4,h5, p, a, button, label, select, input, div, span {
     }
 }
 
-.form-control {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-
-    &--stacked {
-        flex-direction: column;
-        align-items: baseline;
-    }
-
-    &--floating {
-        position: relative;
-    }
-}
-
-.label {
-    flex-basis: auto;
-
-    .form-control--stacked & {
-        margin-bottom: 0.25rem;
-    }
-
-    .form-control--floating & {
-        position: absolute;
-        font-size: .8rem;
-        top: 3px;
-        left: 5px;
-    }
-}
-
-.input {
-    border: 1px solid #ccc;
-    height: 25px;
-    margin-left: 0.5rem;
-
-    .form-control--stacked &,
-    .form-control--floating & {
-        margin-left: 0;
-    }
-
-    .form-control--floating & {
-        height: auto;
-        padding: 20px 0 4px 6px;
-    }
-}

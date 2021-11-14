@@ -1,0 +1,33 @@
+{
+  "name": "cosmos-css",
+  "version": "1.0.0",
+  "description": "small css framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jenny-q/cosmos-css.git"
+  },
+  "keywords": [
+    "scss",
+    "css",
+    "gulp",
+    "responsive"
+  ],
+  "author": "Jennifer Quispe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jenny-q/cosmos-css/issues"
+  },
+  "homepage": "https://github.com/jenny-q/cosmos-css#readme",
+  "dependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.1.1",
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {}
+}
