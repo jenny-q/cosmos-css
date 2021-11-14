@@ -1,0 +1,65 @@
+.btn {
+    border-radius: 0;
+    border: 0;
+    background: $white;
+    padding: .45rem .75rem;
+    background: $primary;
+    color: $white;
+    border: 1px solid $primary;
+    cursor: pointer;
+    transition: .1s;
+    border-radius: $xs;
+
+    &--lg {
+        font-size: $lgBtn;
+        padding: 0.5rem 1rem;
+    }
+
+    &--sm {
+        font-size: $smBtn;
+        padding: 0.25rem .5rem;
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+        border: 1px solid $primaryHover;
+        background: $primaryHover;
+    }
+
+    &--box {
+        border-radius: 0;
+    }
+
+    &--link {
+        border: none;
+        padding: 0;
+        background: transparent;
+        color: $black;
+
+        &:hover {
+            background: transparent;
+            border:none;
+            text-decoration: underline;
+        }
+    }
+
+
+    // &.yellow {
+    //     border-color: $yellow;
+    //     transition: .1s;
+    //     &:hover {
+    //         background: $yellow;
+    //         transition: .1s;
+    //     }
+    // }
+
+    // &.green {
+    //     border-color:$green;
+    //     transition: .1s;
+    //     &:hover {
+    //         background: $green;
+    //         transition: .1s;
+    //     }
+    // }
+}

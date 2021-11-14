@@ -5,4 +5,11 @@
     &-soft-red {
         background: $soft-red;
     }
+    &-red {
+        background: $red;
+    }
+    &--green {
+        background: $green !important;
+        border: 1px solid $green !important;
+    }
 }

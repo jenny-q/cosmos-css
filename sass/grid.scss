@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-
-h1,h2,h3,h4,h5, p, a, button, label, select, input, div, span {
-    font-family: 'Roboto', sans-serif;
-}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -27,17 +22,15 @@ h1,h2,h3,h4,h5, p, a, button, label, select, input, div, span {
     margin: $xs;
 }
 
-.m-xs {
-    margin: $xs;
-}
-
-.p-xs {
-    padding: $xs;
+.nav {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .main {
     max-width: 1200px;
     width: 100%;
+    margin: 0 auto;
 }
 
 .container {
@@ -49,63 +42,3 @@ h1,h2,h3,h4,h5, p, a, button, label, select, input, div, span {
         margin: 0 auto;
     }
 }
-
-.btn {
-    border-radius: 0;
-    border: 0;
-    background: #fff;
-    padding: .5rem;
-    border: 1px solid #DADADA;
-    cursor: pointer;
-
-    &:hover,
-    &:focus,
-    &:focus-visible {
-        border: 1px solid #000;
-    }
-
-    &--rounded {
-        border-radius: .25rem;
-    }
-
-    &--link {
-        border: none;
-        padding: 0;
-
-        &:hover {
-            border:none;
-            text-decoration: underline;
-        }
-    }
-
-    &.red {
-        border-color: #BA0000;
-        color: #BA0000;
-        transition: .1s;
-
-        &:hover {
-            background: #BA0000;
-            color: $white;
-            transition: .1s;
-        }
-    }
-
-    &.yellow {
-        border-color: #FFE400;
-        transition: .1s;
-        &:hover {
-            background: #FFE400;
-            transition: .1s;
-        }
-    }
-
-    &.green {
-        border-color: #74F211;
-        transition: .1s;
-        &:hover {
-            background: #74F211;
-            transition: .1s;
-        }
-    }
-}
-

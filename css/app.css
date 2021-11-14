@@ -1,4 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+.m-xs {
+  margin: 0.25rem; }
+
+.p-xs {
+  padding: 0.25rem; }
+
 .mt-sm {
   margin: 0.5rem 0 0 0; }
 
@@ -8,8 +14,67 @@
 .mt-lg {
   margin: 1rem 0 0 0; }
 
-h1, h2, h3, h4, h5, p, a, button, label, select, input, div, span {
-  font-family: 'Roboto', sans-serif; }
+.mb-lg {
+  margin: 0 0 1rem 0; }
+
+.mb-xl {
+  margin: 0 0 1.5rem 0; }
+
+.spacer {
+  padding: 2rem 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer; }
+
+button {
+  background-color: transparent;
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer; }
+
+figure {
+  margin: 0; }
+
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+  margin: 0; }
+
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit; }
+
+p {
+  margin: 0; }
+
+cite {
+  font-style: normal; }
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0; }
 
 .row {
   display: flex;
@@ -28,15 +93,14 @@ h1, h2, h3, h4, h5, p, a, button, label, select, input, div, span {
   width: 100%;
   margin: 0.25rem; }
 
-.m-xs {
-  margin: 0.25rem; }
-
-.p-xs {
-  padding: 0.25rem; }
+.nav {
+  max-width: 1200px;
+  margin: 0 auto; }
 
 .main {
   max-width: 1200px;
-  width: 100%; }
+  width: 100%;
+  margin: 0 auto; }
 
 @media (min-width: 320px) {
   .container {
@@ -46,49 +110,18 @@ h1, h2, h3, h4, h5, p, a, button, label, select, input, div, span {
   .container {
     margin: 0 auto; } }
 
-.btn {
-  border-radius: 0;
-  border: 0;
-  background: #fff;
-  padding: .5rem;
-  border: 1px solid #DADADA;
-  cursor: pointer; }
-  .btn:hover, .btn:focus, .btn:focus-visible {
-    border: 1px solid #000; }
-  .btn--rounded {
-    border-radius: .25rem; }
-  .btn--link {
-    border: none;
-    padding: 0; }
-    .btn--link:hover {
-      border: none;
-      text-decoration: underline; }
-  .btn.red {
-    border-color: #BA0000;
-    color: #BA0000;
-    transition: .1s; }
-    .btn.red:hover {
-      background: #BA0000;
-      color: #ffffff;
-      transition: .1s; }
-  .btn.yellow {
-    border-color: #FFE400;
-    transition: .1s; }
-    .btn.yellow:hover {
-      background: #FFE400;
-      transition: .1s; }
-  .btn.green {
-    border-color: #74F211;
-    transition: .1s; }
-    .btn.green:hover {
-      background: #74F211;
-      transition: .1s; }
-
 .bg-light-gray {
   background: #E5E5E5; }
 
 .bg-soft-red {
   background: #FFCCD2; }
+
+.bg-red {
+  background: #BA0000; }
+
+.bg--green {
+  background: #0B8E21 !important;
+  border: 1px solid #0B8E21 !important; }
 
 .form-control {
   display: flex;
@@ -182,3 +215,72 @@ h1, h2, h3, h4, h5, p, a, button, label, select, input, div, span {
   border-radius: 0.5rem; }
   .alert__text {
     margin: 0; }
+
+.btn {
+  border-radius: 0;
+  border: 0;
+  background: #ffffff;
+  padding: .45rem .75rem;
+  background: #0551C2;
+  color: #ffffff;
+  border: 1px solid #0551C2;
+  cursor: pointer;
+  transition: .1s;
+  border-radius: 0.25rem; }
+  .btn--lg {
+    font-size: 1.25rem;
+    padding: 0.5rem 1rem; }
+  .btn--sm {
+    font-size: 0.9rem;
+    padding: 0.25rem .5rem; }
+  .btn:hover, .btn:focus, .btn:focus-visible {
+    border: 1px solid #084BAF;
+    background: #084BAF; }
+  .btn--box {
+    border-radius: 0; }
+  .btn--link {
+    border: none;
+    padding: 0;
+    background: transparent;
+    color: #000000; }
+    .btn--link:hover {
+      background: transparent;
+      border: none;
+      text-decoration: underline; }
+
+h1, h2, h3, h4, h5, p, a, button, label, select, input, div, span {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300; }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  margin-bottom: 0.5rem;
+  line-height: 1.25;
+  font-weight: 500; }
+
+h1, .h1 {
+  font-size: 2.5rem; }
+
+h2, .h2 {
+  font-size: 2rem; }
+
+h3, .h3 {
+  font-size: 1.75rem; }
+
+h4, .h4 {
+  font-size: 1.5rem; }
+
+h5, .h5 {
+  font-size: 1.25rem; }
+
+h6, .h6 {
+  font-size: 1rem; }
+
+.breadcrumbs__list {
+  margin: 2rem 0;
+  display: flex; }
+  .breadcrumbs__list-item {
+    font-size: 1rem; }
+    .breadcrumbs__list-item .icon {
+      color: #d4d5d5;
+      font-weight: 400;
+      margin: 0 1rem; }
