@@ -1,4 +1,8 @@
-.bg-light-gray {
-    background: #E5E5E5;
+.bg {
+    &-light-gray {
+        background: #E5E5E5;
+    }
+    &-soft-red {
+        background: $soft-red;
+    }
 }
-

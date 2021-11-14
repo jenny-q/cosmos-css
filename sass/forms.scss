@@ -23,15 +23,17 @@
     .form-control--floating & {
         position: absolute;
         font-size: .8rem;
-        top: 3px;
-        left: 5px;
+        top: 7px;
+        left: $xs;
     }
 }
 
 .input {
     border: 1px solid $outline;
-    height: 25px;
+    min-height: 25px;
     margin-left: $sm;
+    padding: $xs $md;
+    width: 100%;
 
     .form-control--stacked &,
     .form-control--floating & {

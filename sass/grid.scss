@@ -35,10 +35,12 @@ h1,h2,h3,h4,h5, p, a, button, label, select, input, div, span {
     padding: $xs;
 }
 
-.container {
+.main {
     max-width: 1200px;
     width: 100%;
+}
 
+.container {
     @include min-xs {
         margin: 0 1rem;
     }

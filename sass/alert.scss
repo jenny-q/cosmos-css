@@ -1,0 +1,10 @@
+.alert {
+    border: 1px solid $black;
+    padding: $lg;
+    margin: $lg 0;
+    border-radius: $sm;
+
+    &__text {
+        margin: 0;
+    }
+}

@@ -4,90 +4,160 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/app.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <main class="container">
-        <div class="row is-25">
-            <div class="column is-100">
-                <h2 class="h3 heading">25% columns</h2>
-            </div>
-            <div class="column">.column
-                <div class="bg-light-gray m-xs p-xs">.bg-light-gray</div>
-            </div>
-            <div class="column">.column
-                <div class="bg-light-gray m-xs p-xs">.bg-light-gray</div>
-            </div>
-            <div class="column">.column
-                <div class="bg-light-gray m-xs p-xs">.bg-light-gray</div>
-            </div>
-            <div class="column">.column
-                <div class="bg-light-gray m-xs p-xs">.bg-light-gray</div>
-            </div>
-        </div>
+    <main class="main">
+        <div class="container">
+            <h2>Radio Buttons</h2>
 
-        <div class="row is-50">
-            <div class="column is-100">
-                <h2 class="h3 heading">50% columns</h2>
+            <div class="alert bg-soft-red">
+                <p class="alert__text">There are a few radio button styles. Default, custom, and custom level AAA for accessibility.</p>
             </div>
-            <div class="column">.column
-                <div class="bg-light-gray m-xs p-xs">.bg-light-gray</div>
+
+            <section class="mt-lg">
+                <h2>Default Radio Buttons</h2>
+                <label class="radio">
+                    <input type="radio" class="radio__default" checked="checked" name="default-radio">Dogs
+                </label>
+                <label class="radio">
+                    <input type="radio" class="radio__default" checked="checked" name="default-radio">Cats
+                </label>
+                <label class="radio">
+                    <input type="radio" class="radio__default" checked="checked" name="default-radio">Birbs
+                </label>
+            </section>
+            
+            <section class="mt-lg">
+                <h2>Custom Radio Buttons</h2>
+                <label class="radio">
+                    <input type="radio" class="radio__checkbox" checked="checked" name="radio">
+                    <span class="radio__checkbox-icon"></span>Bananas
+                </label>
+    
+                <label class="radio">
+                    <input type="radio" class="radio__checkbox" name="radio">
+                    <span class="radio__checkbox-icon"></span>Watermelon
+                </label>
+                <label class="radio">
+                    <input type="radio" class="radio__checkbox" name="radio">
+                    <span class="radio__checkbox-icon"></span>A Pear Apple
+                </label>
+            </section>
+
+            <section class="mt-lg">
+                <h2>Custom Radio Buttons - WCAG Level AAA</h2>
+                <label class="radio is-aaa">
+                    <input type="radio" class="radio__checkbox" checked="checked" name="radio-aaa">
+                    <span class="radio__checkbox-icon"></span>Bigger Bananas
+                </label>
+    
+                <label class="radio is-aaa">
+                    <input type="radio" class="radio__checkbox" name="radio-aaa">
+                    <span class="radio__checkbox-icon"></span>Bigger Watermelon
+                </label>
+                <label class="radio is-aaa">
+                    <input type="radio" class="radio__checkbox" name="radio-aaa">
+                    <span class="radio__checkbox-icon"></span>Bigger Pear Apples
+                </label>
+            </section>
+
+
+            <div class="row is-25">
+                <div class="column is-100">
+                    <h2 class="h3 heading">.row.is-25</h2>
+                </div>
+                <div class="column">.column
+                    <div class="bg-light-gray m-xs p-xs">.bg-light-gray
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="column">.column
+                    <div class="bg-light-gray m-xs p-xs">.bg-light-gray
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="column">.column
+                    <div class="bg-light-gray m-xs p-xs">.bg-light-gray
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="column">.column
+                    <div class="bg-light-gray m-xs p-xs">.bg-light-gray
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
             </div>
-            <div class="column">.column
-                <div class="bg-light-gray m-xs p-xs">.bg-light-gray</div>
+
+            <div class="row is-50">
+                <div class="column is-100">
+                    <h2 class="h3 heading">.row.is-25</h2>
+                </div>
+                <div class="column">.column
+                    <div class="bg-light-gray m-xs p-xs">.bg-light-gray
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+                <div class="column">.column
+                    <div class="bg-light-gray m-xs p-xs">.bg-light-gray
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Buttons</h2>
+            <button type="button" class="btn">btn</button>
+            <button type="button" class="btn btn--rounded">btn btn--rounded</button>
+            <button type="button" class="btn btn--link">btn btn--link</button>
+
+            <h2>Button Colors</h2>
+            <button type="button" class="btn red">btn red</button>
+            <button type="button" class="btn yellow">btn yellow</button>
+            <button type="button" class="btn green">btn green</button>
+
+            <h2>Forms - default</h2>
+            <div class="form-control">
+                <label class="label">First Name:</label>
+                <input type="text" class="input" />
+            </div>
+            <div class="form-control">
+                <label class="label">Last Name:</label>
+                <input type="text" class="input" />
+            </div>
+
+            <h2>Forms - stacked</h2>
+            <div class="form-control form-control--stacked">
+                <label class="label">First Name:</label>
+                <input type="text" class="input" />
+            </div>
+            <div class="form-control form-control--stacked">
+                <label class="label">Last Name:</label>
+                <input type="text" class="input" />
+            </div>
+
+            <h2>Forms - floating label</h2>
+            <div class="form-control form-control--floating">
+                <label class="label">First Name</label>
+                <input type="text" class="input" />
+            </div>
+            <div class="form-control form-control--floating">
+                <label class="label">Last Name</label>
+                <input type="text" class="input" />
             </div>
         </div>
-
-        <h2>Buttons</h2>
-        <button type="button" class="btn">btn</button>
-        <button type="button" class="btn btn--rounded">btn btn--rounded</button>
-        <button type="button" class="btn btn--link">btn btn--link</button>
-
-        <h2>Button Colors</h2>
-        <button type="button" class="btn red">btn red</button>
-        <button type="button" class="btn yellow">btn yellow</button>
-        <button type="button" class="btn green">btn green</button>
-
-        <h2>Forms - default</h2>
-        <div class="form-control">
-            <label class="label">First Name:</label>
-            <input type="text" class="input" />
-        </div>
-        <div class="form-control">
-            <label class="label">Last Name:</label>
-            <input type="text" class="input" />
-        </div>
-
-        <h2>Forms - stacked</h2>
-        <div class="form-control form-control--stacked">
-            <label class="label">First Name:</label>
-            <input type="text" class="input" />
-        </div>
-        <div class="form-control form-control--stacked">
-            <label class="label">Last Name:</label>
-            <input type="text" class="input" />
-        </div>
-
-        <h2>Forms - floating label</h2>
-        <div class="form-control form-control--floating">
-            <label class="label">First Name</label>
-            <input type="text" class="input" />
-        </div>
-        <div class="form-control form-control--floating">
-            <label class="label">Last Name</label>
-            <input type="text" class="input" />
-        </div>
-
     </main>
-    </body>
+</body>
+
 </html>
