@@ -1,0 +1,25 @@
+header {
+    border-bottom: 1px solid #F6FCFF;
+}
+
+.cosmos-nav {
+    padding: 1rem 0;
+}
+
+.cosmos-sidebar {
+    padding: 1rem;
+    background-color: #F6FCFF;
+}
+
+.cosmos-list {
+    padding-left: 1rem;
+}
+
+.cosmos-list li {
+    margin-bottom: .5rem;
+}
+
+.cosmos-sidebar__sticky {
+    position: sticky;
+    top: 1rem;
+}

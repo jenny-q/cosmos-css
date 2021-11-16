@@ -1,11 +1,10 @@
-.breadcrumbs {
+.breadcrumbs  {
     &__list {
         margin: 2rem 0;
         display: flex;
 
         &-item {
             font-size: 1rem;
-            
             .icon {
                 color: #d4d5d5;
                 font-weight: 400;

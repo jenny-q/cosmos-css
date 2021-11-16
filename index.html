@@ -3,226 +3,380 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/app.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>cosmos css</title>
+    <meta name="description" content="a small, accessible, mobile-first css framework" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/page-specific.css" />
 </head>
 
 <body>
     <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
     <header>
-        <nav class="nav">
+        <div class="alert alert--header bg-pink text-center color-light">
+            cosmos.css is in beta
+        </div>
+        <nav class="nav cosmos-nav">
             <div class="container">
                 <h1>cosmos.css</h1>
-                <p>a small, accessible mobile-first css framework</p>
+                <p>a small, accessible, mobile-first css framework</p>
             </div>
         </nav>
     </header>
-    <main class="main">
-        <div class="container">
+
+    <main>
+        <div class="row">
+            <aside class="cosmos-sidebar">
+                <div class="cosmos-sidebar__sticky">
+                    <h2 class="h4">components</h2>
+                        <ul class="cosmos-list">
+                            <li><a href="#headings">Headings</a></li>
+                            <li><a href="#breadcrumbs">Breadcrumbs</a></li>
+                            <li><a href="#buttons">buttons</a></li>
+                            <li><a href="#forms">forms</a></li>
+                            <li><a href="#radio">radio</a></li>
+                            <li><a href="#checkbox">checkbox</a></li>
+                        </ul>
+                </div>
+            </aside>
+            <section class="container">
+                <div id="headings" class="spacer container">
+                    <h2>Headings</h2>
+                    <h3 class="h1">
+                        Cosmos is a small, accessible, mobile-first css framework
+                    </h3>
+                    <h3 class="h2">
+                        Cosmos is a small, accessible, mobile-first css framework
+                    </h3>
+                    <h3 class="h3">
+                        Cosmos is a small, accessible, mobile-first css framework
+                    </h3>
+                    <h3 class="h4">
+                        Cosmos is a small, accessible, mobile-first css framework
+                    </h3>
+                    <h3 class="h5">
+                        Cosmos is a small, accessible, mobile-first css framework
+                    </h3>
+                </div>
+                <div id="breadcrumbs" class="spacer container">
+                    <h2>Breadcrumbs</h2>
+                    <nav class="breadcrumbs">
+                        <ul class="breadcrumbs__list">
+                            <li class="breadcrumbs__list-item">
+                                <a href="">Home</a>
+                                <span class="icon" aria-hidden="true">/</span>
+                            </li>
+                            <li class="breadcrumbs__list-item">
+                                <a href="">Category</a>
+                                <span class="icon" aria-hidden="true">/</span>
+                            </li>
+                            <li class="breadcrumbs__list-item">
+                                <a href="">Nested Category</a>
+                                <span class="icon" aria-hidden="true">/</span>
+                            </li>
+                            <li class="breadcrumbs__list-item breadcrumbs__list-item--current" aria-current="page">
+                                Current Page
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div id="grid" class="spacer container">
+                    <h2>Flexbox based grid</h2>
+                    <div class="row is-25 mb-xl">
+                        <div class="column is-100">
+                            <h2 class="h3 heading">.row.is-25</h2>
+                        </div>
+                        <div class="column">
+                            .column
+                            <div class="bg-light-gray m-xs p-xs">
+                                .bg-light-gray
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            .column
+                            <div class="bg-light-gray m-xs p-xs">
+                                .bg-light-gray
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            .column
+                            <div class="bg-light-gray m-xs p-xs">
+                                .bg-light-gray
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            .column
+                            <div class="bg-light-gray m-xs p-xs">
+                                .bg-light-gray
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
         
-            <section class="spacer">
-                <h2>Headings</h2>
-                <h3 class="h1">Cosmos is a small, accessible, mobile-first css framework</h3>
-                <h3 class="h2">Cosmos is a small, accessible, mobile-first css framework</h3>
-                <h3 class="h3">Cosmos is a small, accessible, mobile-first css framework</h3>
-                <h3 class="h4">Cosmos is a small, accessible, mobile-first css framework</h3>
-                <h3 class="h5">Cosmos is a small, accessible, mobile-first css framework</h3>
-            </section>
-
-            <section class="spacer">
-                <h2>Breadcrumbs</h2>
-                <nav class="breadcrumbs">
-                    <ul class="breadcrumbs__list">
-                        <li class="breadcrumbs__list-item">
-                            <a href="">Home</a>
-                            <span class="icon" aria-hidden="true">/</span>
-                        </li>
-                        <li class="breadcrumbs__list-item">
-                            <a href="">Category</a>
-                            <span class="icon" aria-hidden="true">/</span>
-                        </li>
-                        <li class="breadcrumbs__list-item">
-                            <a href="">Nested Category</a>
-                            <span class="icon" aria-hidden="true">/</span>
-                        </li>
-                        <li class="breadcrumbs__list-item breadcrumbs__list-item--current" aria-current="page">Current Page</li>
-                    </ul>
-                </nav>
-            </section>
-
-            
-            <section class="spacer">
-                <div class="row is-25">
-                    <div class="column is-100">
-                        <h2 class="h3 heading">.row.is-25</h2>
-                    </div>
-                    <div class="column">.column
-                        <div class="bg-light-gray m-xs p-xs">.bg-light-gray
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                    <div class="row is-50 mb-xl">
+                        <div class="column is-100">
+                            <h2 class="h3 heading">.row.is-50</h2>
+                        </div>
+                        <div class="column">
+                            .column
+                            <div class="bg-light-gray m-xs p-xs">
+                                .bg-light-gray
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="column">
+                            .column
+                            <div class="bg-light-gray m-xs p-xs">
+                                .bg-light-gray
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
                         </div>
                     </div>
-                    <div class="column">.column
-                        <div class="bg-light-gray m-xs p-xs">.bg-light-gray
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        </div>
-                    </div>
-                    <div class="column">.column
-                        <div class="bg-light-gray m-xs p-xs">.bg-light-gray
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        </div>
-                    </div>
-                    <div class="column">.column
-                        <div class="bg-light-gray m-xs p-xs">.bg-light-gray
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="row is-50">
-                    <div class="column is-100">
-                        <h2 class="h3 heading">.row.is-50</h2>
-                    </div>
-                    <div class="column">.column
-                        <div class="bg-light-gray m-xs p-xs">.bg-light-gray
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        </div>
-                    </div>
-                    <div class="column">.column
-                        <div class="bg-light-gray m-xs p-xs">.bg-light-gray
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="spacer">
-                <h2>Buttons</h2>
-                <p>There are three sizes for regular, box, and link buttons.</p>
-                <div class="mb-xl">
-                    <button type="button" class="btn btn--sm">btn btn--sm</button>
-                    <button type="button" class="btn">btn</button>
-                    <button type="button" class="btn btn--lg">btn btn--lg</button>
-                </div>
-                
-                <div class="mb-xl">
-                    <button type="button" class="btn btn--box btn--sm">btn btn--sm btn--box</button>
-                    <button type="button" class="btn btn--box">btn btn--box</button>
-                    <button type="button" class="btn btn--box btn--lg">btn btn--lg btn--box</button>
-                </div>
-                
-                <div class="mb-xl">
-                    <button type="button" class="btn btn--link btn--sm">btn btn--sm btn--link</button>
-                    <button type="button" class="btn btn--link">btn btn--link</button>
-                    <button type="button" class="btn btn--link btn--lg">btn btn--lg btn--link</button>
-                </div>
-    
-                <h2>Button Colors</h2>
-                <p>Add any of the bg-color classes to update the button color.</p>
-                <button type="button" class="btn bg--red">btn red</button>
-                <button type="button" class="btn yellow">btn yellow</button>
-                <button type="button" class="btn bg--green">btn green</button>
-            </section>
-
-            <section class="spacer">
-                <h2>Forms - default</h2>
-                <div class="form-control">
-                    <label class="label">First Name:</label>
-                    <input type="text" class="input" />
-                </div>
-                <div class="form-control">
-                    <label class="label">Last Name:</label>
-                    <input type="text" class="input" />
-                </div>
-    
-                <h2>Forms - stacked</h2>
-                <div class="form-control form-control--stacked">
-                    <label class="label">First Name:</label>
-                    <input type="text" class="input" />
-                </div>
-                <div class="form-control form-control--stacked">
-                    <label class="label">Last Name:</label>
-                    <input type="text" class="input" />
-                </div>
-    
-                <h2>Forms - floating label</h2>
-                <div class="form-control form-control--floating">
-                    <label class="label">First Name</label>
-                    <input type="text" class="input" />
-                </div>
-                <div class="form-control form-control--floating">
-                    <label class="label">Last Name</label>
-                    <input type="text" class="input" />
-                </div>
-            </section>
-
-            <section class="spacer">
-                <h2>Radio Buttons</h2>
-    
-                <div class="alert bg-soft-red">
-                    <p class="alert__text">There are a few radio button styles. Default, custom, and custom level AAA for accessibility.</p>
-                </div>
-    
-                <div class="mt-lg">
-                    <h2>Default Radio Buttons</h2>
-                    <label class="radio">
-                        <input type="radio" class="radio__default" checked="checked" name="default-radio">Dogs
-                    </label>
-                    <label class="radio">
-                        <input type="radio" class="radio__default" checked="checked" name="default-radio">Cats
-                    </label>
-                    <label class="radio">
-                        <input type="radio" class="radio__default" checked="checked" name="default-radio">Birbs
-                    </label>
-                </div>
-    
-                <div class="mt-lg">
-                    <h2>Custom Radio Buttons</h2>
-                    <label class="radio">
-                        <input type="radio" class="radio__checkbox" checked="checked" name="radio">
-                        <span class="radio__checkbox-icon"></span>Bananas
-                    </label>
         
-                    <label class="radio">
-                        <input type="radio" class="radio__checkbox" name="radio">
-                        <span class="radio__checkbox-icon"></span>Watermelon
-                    </label>
-                    <label class="radio">
-                        <input type="radio" class="radio__checkbox" name="radio">
-                        <span class="radio__checkbox-icon"></span>A Pear Apple
-                    </label>
-                </div>
-    
-                <div class="mt-lg">
-                    <h2>Custom Radio Buttons - WCAG Level AAA</h2>
-                    <label class="radio is-aaa">
-                        <input type="radio" class="radio__checkbox" checked="checked" name="radio-aaa">
-                        <span class="radio__checkbox-icon"></span>Bigger Bananas
-                    </label>
         
-                    <label class="radio is-aaa">
-                        <input type="radio" class="radio__checkbox" name="radio-aaa">
-                        <span class="radio__checkbox-icon"></span>Bigger Watermelon
-                    </label>
-                    <label class="radio is-aaa">
-                        <input type="radio" class="radio__checkbox" name="radio-aaa">
-                        <span class="radio__checkbox-icon"></span>Bigger Pear Apples
-                    </label>
+                    <div class="row">
+                        <div class="column is-100">
+                            <h2 class="h3 heading">.row</h2>
+                        </div>
+                        <div class="column">
+                            .column
+                            <div class="bg-light-gray m-xs p-xs">
+                                .bg-light-gray
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-    
+                <div id="buttons" class="spacer container">
+                    <h2>Buttons</h2>
+                    <p>There are three sizes for regular, box, and link buttons.</p>
+                    <div class="mb-xl">
+                        <button type="button" class="btn btn--sm">btn btn--sm</button>
+                        <button type="button" class="btn">btn</button>
+                        <button type="button" class="btn btn--lg">btn btn--lg</button>
+                    </div>
+        
+                    <div class="mb-xl">
+                        <button type="button" class="btn btn--box btn--sm">
+                            btn btn--sm btn--box
+                        </button>
+                        <button type="button" class="btn btn--box">btn btn--box</button>
+                        <button type="button" class="btn btn--box btn--lg">
+                            btn btn--lg btn--box
+                        </button>
+                    </div>
+        
+                    <div class="mb-xl">
+                        <button type="button" class="btn btn--link btn--sm">
+                            btn btn--sm btn--link
+                        </button>
+                        <button type="button" class="btn btn--link">btn btn--link</button>
+                        <button type="button" class="btn btn--link btn--lg">
+                            btn btn--lg btn--link
+                        </button>
+                    </div>
+        
+                    <h2>Button Colors</h2>
+                    <p>Add any of the bg-color classes to update the button color.</p>
+                    <button type="button" class="btn bg--red">btn red</button>
+                    <button type="button" class="btn yellow">btn yellow</button>
+                    <button type="button" class="btn bg--green">btn green</button>
+                </div>
+        
+                <div  id="badges" class="spacer container">
+                    <h2>Badges</h2>
+        
+                    <div class="mt-lg">
+                        <span class="badge">badge</span>
+                        <span class="badge is-bold">badge is-bold</span>    
+                    </div>
+        
+                </div>
+        
+                <div id="forms" class="spacer container">
+                    <h2>Forms - default</h2>
+                    <div class="form-control">
+                        <label class="label">First Name:</label>
+                        <input type="text" class="input" />
+                    </div>
+                    <div class="form-control">
+                        <label class="label">Last Name:</label>
+                        <input type="text" class="input" />
+                    </div>
+        
+                    <h2>Forms - stacked</h2>
+                    <div class="form-control form-control--stacked">
+                        <label class="label">First Name:</label>
+                        <input type="text" class="input" />
+                    </div>
+                    <div class="form-control form-control--stacked">
+                        <label class="label">Last Name:</label>
+                        <input type="text" class="input" />
+                    </div>
+        
+                    <h2>Forms - floating label</h2>
+                    <div class="form-control form-control--floating">
+                        <label class="label">First Name</label>
+                        <input type="text" class="input" />
+                    </div>
+                    <div class="form-control form-control--floating">
+                        <label class="label">Last Name</label>
+                        <input type="text" class="input" />
+                    </div>
+                </div>
+        
+                <div  id="radio" class="spacer container">
+                    <h2>Radio Buttons</h2>
+        
+                    <div class="alert bg-soft-red">
+                        <p class="alert__text">
+                            There are a few radio button styles. Default, custom, and custom
+                            level AAA for accessibility.
+                        </p>
+                    </div>
+        
+                    <div class="mt-lg">
+                        <h2>Default Radio Buttons</h2>
+                        <label class="radio">
+                            <input type="radio" class="radio__default" checked="checked" name="default-radio" />Dogs
+                        </label>
+                        <label class="radio">
+                            <input type="radio" class="radio__default" checked="checked" name="default-radio" />Cats
+                        </label>
+                        <label class="radio">
+                            <input type="radio" class="radio__default" checked="checked" name="default-radio" />Birbs
+                        </label>
+                    </div>
+        
+                    <div class="mt-lg">
+                        <h2>Custom Radio Buttons</h2>
+                        <label class="radio">
+                            <input type="radio" class="radio__checkbox" checked="checked" name="radio" />
+                            <span class="radio__checkbox-icon"></span>Bananas
+                        </label>
+        
+                        <label class="radio">
+                            <input type="radio" class="radio__checkbox" name="radio" />
+                            <span class="radio__checkbox-icon"></span>Watermelon
+                        </label>
+                        <label class="radio">
+                            <input type="radio" class="radio__checkbox" name="radio" />
+                            <span class="radio__checkbox-icon"></span>A Pear Apple
+                        </label>
+                    </div>
+        
+                    <div class="mt-lg">
+                        <h2>Custom Radio Buttons - WCAG Level AAA</h2>
+                        <label class="radio is-aaa">
+                            <input type="radio" class="radio__checkbox" checked="checked" name="radio-aaa" />
+                            <span class="radio__checkbox-icon"></span>Bigger Bananas
+                        </label>
+        
+                        <label class="radio is-aaa">
+                            <input type="radio" class="radio__checkbox" name="radio-aaa" />
+                            <span class="radio__checkbox-icon"></span>Bigger Watermelon
+                        </label>
+                        <label class="radio is-aaa">
+                            <input type="radio" class="radio__checkbox" name="radio-aaa" />
+                            <span class="radio__checkbox-icon"></span>Bigger Pear Apples
+                        </label>
+                    </div>
+                </div>
+        
+                <div  id="checkbox" class="spacer container">
+                    <h2>Checkbox</h2>
+        
+                    <div class="alert bg-light-gray">
+                        <p class="alert__text">
+                            Like the radio button, there are three types of checkboxes
+                        </p>
+                    </div>
+        
+                    <div class="mt-lg">
+                        <h2>Default Checkbox</h2>
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__default" checked="checked" name="default-checkbox" />Dogs
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__default"  name="default-checkbox" />Cats
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__default"  name="default-checkbox" />Birbs
+                        </label>
+                    </div>
+        
+                    <div class="mt-lg">
+                        <h2>Custom Radio Buttons</h2>
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__box" checked="checked" name="checkbox" />
+                            <span class="checkbox__box-icon"></span>Bananas
+                        </label>
+        
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__box" name="checkbox" />
+                            <span class="checkbox__box-icon"></span>Watermelon
+                        </label>
+                        <label class="checkbox">
+                            <input type="checkbox" class="checkbox__box" name="checkbox" />
+                            <span class="checkbox__box-icon"></span>A Pear Apple
+                        </label>
+                    </div>
+        
+                    <div class="mt-lg">
+                        <h2>Custom Radio Buttons - WCAG Level AAA</h2>
+                        <label class="checkbox is-aaa">
+                            <input type="checkbox" class="checkbox__box" checked="checked" name="checkbox is-aaa" />
+                            <span class="checkbox__box-icon"></span>Bigger Bananas
+                        </label>
+        
+                        <label class="checkbox is-aaa">
+                            <input type="checkbox" class="checkbox__box" name="checkbox is-aaa" />
+                            <span class="checkbox__box-icon"></span>Bigger Watermelon
+                        </label>
+                        <label class="checkbox is-aaa">
+                            <input type="checkbox" class="checkbox__box" name="checkbox is-aaa" />
+                            <span class="checkbox__box-icon"></span>Bigger Pear Apples
+                        </label>
+                    </div>
+                </div>
             </section>
-            
         </div>
     </main>
 </body>
-
 </html>
