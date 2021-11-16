@@ -1,4 +1,4 @@
-.radio {
+.checkbox {
     @include inputContainer;
 
     &.is-aaa {
@@ -9,18 +9,17 @@
         @include inputDefault;
     }
 
-    &__checkbox {
+    &__box {
         @include input;
 
         &:focus {
-            ~.radio__checkbox-icon {
+            ~.checkbox__box-icon {
                 border:1px solid $black;
             }
         }
 
         &-icon {
             @include inputIcon;
-            border-radius: 50%;
 
             &:after {
                 @include inputIconPseudo;
@@ -38,7 +37,7 @@
         }
 
         &:checked {
-            ~ .radio__checkbox-icon {
+            ~ .checkbox__box-icon {
                 background-color: #6B80B3;
 
                 &:after {

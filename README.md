@@ -4,6 +4,6 @@ A small, css first framework for any ecommerce site/build. All of the components
 
 V2 of this project with pull in the javascript components from adaux.js.
 
-Track open tickets here:
-https://github.com/jenny-q/cosmos-css/issues
+Track the project here:
+https://github.com/jenny-q/cosmos-css/projects/2
 
