@@ -10,3 +10,21 @@
 .text-center {
     text-align: center;
 }
+.is-box {
+    border-radius: 0 !important;
+}
+
+.is-fixed {
+    &-top {
+        top: 0;
+        position: fixed;
+        width: 100%;
+    }
+    &-btm {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: fixed;
+        width: 100%;
+    }
+}

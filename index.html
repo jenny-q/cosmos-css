@@ -44,10 +44,11 @@
                         <ul class="cosmos-list">
                             <li><a href="#headings">Headings</a></li>
                             <li><a href="#breadcrumbs">Breadcrumbs</a></li>
-                            <li><a href="#buttons">buttons</a></li>
-                            <li><a href="#forms">forms</a></li>
-                            <li><a href="#radio">radio</a></li>
-                            <li><a href="#checkbox">checkbox</a></li>
+                            <li><a href="#alerts">Alerts</a></li>
+                            <li><a href="#buttons">Buttons</a></li>
+                            <li><a href="#forms">Forms</a></li>
+                            <li><a href="#radio">Radio</a></li>
+                            <li><a href="#checkbox">Checkbox</a></li>
                         </ul>
                 </div>
             </aside>
@@ -92,6 +93,42 @@
                         </ul>
                     </nav>
                 </div>
+
+                <div id="alerts" class="spacer container">
+                    <h2>Alerts</h2>
+                    <p class="mt-xl mb-xl">The default alert is a div with a black border. You can add colors by using any of the <mark>.bg-</mark> colors.</p>
+
+                    <div class="alert">
+                        <p class="alert__text">
+                            Default alert, no background color.
+                        </p>
+                    </div>
+
+                    <div class="alert bg-soft-red">
+                        <p class="alert__text">
+                            Alert with bg class .bg-soft-red
+                        </p>
+                    </div>
+
+                    <p class="mt-xl mb-xl">You can remove any border-radius using <mark>.is-box</mark>, as well as lighten the text color with <mark>.color-light</mark></p>
+
+                    <div class="alert bg-green color-light is-box">
+                        <p class="alert__text">
+                            Alert with bg class <strong>.bg-green.is-box.color-white</strong>
+                        </p>
+                    </div>
+
+                    <p class="mt-xl mb-xl">Alerts can also be used as a navigation call out using <mark>.alert--header</mark>. This removes the margin and border-radius.</p>
+                    <div class="alert alert--header bg-pink text-center color-light">
+                        Header alert using class <strong>.alert.alert--header.bg-pink.text-center.color-light</strong>
+                    </div>
+
+                    <p class="mt-xl mb-xl">These can also be used as a cookie bar using  <mark>.is-fixed-btm</mark>.</p>
+                    <div class="alert alert--header bg-light-gray text-center is-fixed-btm">
+                        Cookie bar example
+                    </div>
+                </div>
+
                 <div id="grid" class="spacer container">
                     <h2>Flexbox based grid</h2>
                     <div class="row is-25 mb-xl">
