@@ -21,15 +21,6 @@
         &-icon {
             @include inputIcon;
 
-            &:after {
-                @include inputIconPseudo;
-
-                .is-aaa & {
-                    height: 18px;
-                    width: 18px;
-                }
-            }
-
             .is-aaa & {
                 height: 44px;
                 width: 44px;
@@ -40,7 +31,7 @@
             ~ .checkbox__box-icon {
                 background-color: #6B80B3;
 
-                &:after {
+                i {
                     display: block;
                 }
             }

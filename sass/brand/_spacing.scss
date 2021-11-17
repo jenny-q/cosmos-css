@@ -20,22 +20,22 @@
 }
 .p {
     &-xs {
-        margin: $xs;
+        padding: $xs;
     }
     &-sm {
-        margin: $sm;
+        padding: $sm;
     }
     &-md {
-        margin: $md;
+        padding: $md;
     }
     &-lg {
-        margin: $lg;
+        padding: $lg;
     }
     &-xl {
-        margin: $xl;
+        padding: $xl;
     }
     &-xxl {
-        margin: $xxl;
+        padding: $xxl;
     }
 }
 
